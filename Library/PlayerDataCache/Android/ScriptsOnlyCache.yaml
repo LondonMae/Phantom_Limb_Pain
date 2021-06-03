@@ -76,6 +76,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 90
@@ -337,7 +339,7 @@ ScriptsOnlyBuild:
     className: OVRHeadsetEmulator
   - hash:
       serializedVersion: 2
-      Hash: 53b3bc81454933ff8aa2a65523f253ad
+      Hash: a0c2b48a0388461a9b3cb17c3b326503
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VRAnimatorController
