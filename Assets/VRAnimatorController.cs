@@ -20,7 +20,7 @@ public class VRAnimatorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 headsetSpeed = vrRig.head.vrTarget.position - previousPos / Time.deltaTime;
+        Vector3 headsetSpeed = (vrRig.head.vrTarget.position - previousPos) / Time.deltaTime;
         headsetSpeed.y = 0;
         Vector3 headsetLocalSpeed = transform.InverseTransformDirection(headsetSpeed);
         previousPos = vrRig.head.vrTarget.position;
