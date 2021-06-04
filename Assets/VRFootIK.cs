@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* knees will automatically bend
+ * when in contact with the floor 
+ */
+
 public class VRFootIK : MonoBehaviour
 {
     private Animator animator;
@@ -15,23 +19,25 @@ public class VRFootIK : MonoBehaviour
     [Range(0, 1)]
     public float leftFootRotWeight = 1;
 
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
     }
 
+    // called automatically by animator 
     private void OnAnimatorIK(int layerIndex)
     {
         Vector3 rightFootPos = animator.GetIKPosition(AvatarIKGoal.RightFoot);
         RaycastHit hit;
-
+        // have we hit the ground?
         bool hasHit = Physics.Raycast(rightFootPos + Vector3.up, Vector3.down, out hit);
         if (hasHit)
         {
+            // if foot has hit the ground set foot position to location of contact + offset
             animator.SetIKPositionWeight(AvatarIKGoal.RightFoot, rightFootPosWeight);
             animator.SetIKPosition(AvatarIKGoal.RightFoot, hit.point + footOffset);
 
+            // feet lay flat on the ground
             Quaternion rightFootRotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(transform.forward, hit.normal), hit.normal);
             animator.SetIKRotationWeight(AvatarIKGoal.RightFoot, rightFootRotWeight);
             animator.SetIKRotation(AvatarIKGoal.RightFoot, rightFootRotation);
@@ -42,13 +48,15 @@ public class VRFootIK : MonoBehaviour
         }
 
         Vector3 leftFootPos = animator.GetIKPosition(AvatarIKGoal.LeftFoot);
-
+        // have we hit the ground?
         hasHit = Physics.Raycast(leftFootPos + Vector3.up, Vector3.down, out hit);
         if (hasHit)
         {
+            // if foot has hit the ground set foot position to location of contact + offset
             animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, leftFootPosWeight);
             animator.SetIKPosition(AvatarIKGoal.LeftFoot, hit.point + footOffset);
 
+            // feet lay flat on the ground
             Quaternion leftFootRotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(transform.forward, hit.normal), hit.normal);
             animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, leftFootRotWeight);
             animator.SetIKRotation(AvatarIKGoal.LeftFoot, leftFootRotation);

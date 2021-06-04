@@ -1544,7 +1544,7 @@ MonoBehaviour:
   drawTripods: 0
   boneSize: 1
   tripodSize: 1
-  boneColor: {r: 0.30081883, g: 0.30568382, b: 0.9811321, a: 0.5}
+  boneColor: {r: 0.58626646, g: 0.5377359, b: 0.7169812, a: 0.5}
   m_Transforms:
   - {fileID: 831558197}
   - {fileID: 2020332117}
@@ -1678,7 +1678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5066711e430fd4fab16cae8ace127b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footOffset: {x: 0, y: 0.2, z: 0}
+  footOffset: {x: 0, y: 0.15, z: 0}
   rightFootPosWeight: 1
   leftFootPosWeight: 1
   rightFootRotWeight: 1
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedThreshold: 0.1
-  smoothing: 0.387
+  smoothing: 0.338
 --- !u!1 &1108301488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,7 +1827,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1477070848}
   - component: {fileID: 1477070847}
-  - component: {fileID: 1477070846}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1835,14 +1834,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1477070846
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477070845}
-  m_Enabled: 1
 --- !u!20 &1477070847
 Camera:
   m_ObjectHideFlags: 0
@@ -1894,7 +1885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477070845}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1, z: 3.42}
+  m_LocalPosition: {x: 0, y: 1.41, z: 3.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2062,8 +2053,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643890928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 3.42}
-  m_LocalScale: {x: 5, y: -5, z: 1}
+  m_LocalPosition: {x: 0, y: 1.98, z: 3.42}
+  m_LocalScale: {x: 4, y: -4, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
