@@ -22,7 +22,11 @@ public class VRMap
         //set rig rotation to vr rotation displaced by rotation offset
         rigTarget.rotation = vrTarget.rotation * Quaternion.Euler(trackingRotationOffset);
     }
+
 }
+
+
+
 
 public class VRRig : MonoBehaviour
 {
@@ -32,6 +36,7 @@ public class VRRig : MonoBehaviour
     public float turnSmoothness;
     public Transform headConstraint;
     public Vector3 headBodyOffset;
+  
 
     void Start()
     {
@@ -49,5 +54,6 @@ public class VRRig : MonoBehaviour
         head.Map();
         leftHand.Map();
         rightHand.Map();
+        
     }
 }
