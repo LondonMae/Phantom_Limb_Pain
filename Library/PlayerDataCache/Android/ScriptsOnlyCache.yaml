@@ -51,7 +51,7 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/BalloonScene.unity:
+    Assets/Scenes/ArmTwitch.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -91,45 +91,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 534}
+      Script: {instanceID: 532}
     - Class: 114
-      Script: {instanceID: 1690}
+      Script: {instanceID: 1688}
     - Class: 114
-      Script: {instanceID: 1724}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 2004}
+      Script: {instanceID: 2002}
     - Class: 114
-      Script: {instanceID: 2070}
+      Script: {instanceID: 2068}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2260}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2646}
     - Class: 114
-      Script: {instanceID: 2652}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2754}
+      Script: {instanceID: 2752}
     - Class: 114
-      Script: {instanceID: 2766}
+      Script: {instanceID: 2764}
     - Class: 114
-      Script: {instanceID: 2808}
+      Script: {instanceID: 2806}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3316}
     - Class: 114
-      Script: {instanceID: 3492}
+      Script: {instanceID: 3490}
     - Class: 114
-      Script: {instanceID: 3574}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3894}
+      Script: {instanceID: 3892}
     - Class: 114
-      Script: {instanceID: 4388}
+      Script: {instanceID: 4386}
     - Class: 114
-      Script: {instanceID: 4566}
+      Script: {instanceID: 4564}
     - Class: 114
-      Script: {instanceID: 5126}
+      Script: {instanceID: 5124}
     - Class: 114
-      Script: {instanceID: 5596}
+      Script: {instanceID: 5594}
     - Class: 114
-      Script: {instanceID: 5616}
+      Script: {instanceID: 5614}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -141,8 +141,6 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
-      Script: {instanceID: 0}
-    - Class: 850595691
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1437,5 +1435,5 @@ ScriptsOnlyBuild:
     className: OVRPhysicsRaycaster
   platform: 13
   scenePathNames:
-  - Assets/Scenes/BalloonScene.unity
+  - Assets/Scenes/ArmTwitch.unity
   playerPath: C:/Users/London Bielicke/Documents/code/Research/phantom_limb/test.apk

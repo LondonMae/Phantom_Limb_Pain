@@ -5,15 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/BalloonScene.unity
+  - enabled: 0
+    path: Assets/Scenes/ArmTracking.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/End.unity
-    guid: 5fc368b4bb74f4a0eafa4532bc6a61d8
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/ArmTwitch.unity
+    guid: 0af3c5e87cfbff249b5c215b62c8836e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2a6da2f70ad24444ea5a9721022ab811,
       type: 2}
