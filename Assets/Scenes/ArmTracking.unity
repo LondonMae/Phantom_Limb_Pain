@@ -1692,11 +1692,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039393790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b21dd6555172b334186997d136d679ef, type: 3}
+  m_Script: {fileID: 11500000, guid: a5a808486396e864d8826d02b4bd98e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedThreshold: 0.1
-  smoothing: 0.338
+  speedThreshold: 0.15
+  smoothing: 1
+  weight: 1
 --- !u!1 &1108301488
 GameObject:
   m_ObjectHideFlags: 0
